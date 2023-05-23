@@ -1,0 +1,585 @@
+
+@font-face{
+    font-family: "Roboto";
+    src:url("../webfonts/Roboto/Roboto-Italic.ttf");
+}
+
+@font-face{
+    font-family: "Dancing script";
+    src:url("../webfonts/Dancing_Script/DancingScript-VariableFont_wght.ttf");
+}
+
+*{
+    margin:0 auto;
+    padding: 0;
+    list-style:none;
+    font-family: Roboto;
+}
+
+header{
+    background-image: url("../imagenes/fondoFlamencos.jpg");
+    background-size: 100%;
+    height: 100px;
+    background-color: black;
+    text-align: center;
+}
+
+
+.logo{
+    width: 1000px;
+    height:1000px;
+    z-index: 10;
+    position: relative;
+    
+ }
+
+ .tituloCalzado{
+    text-decoration: underline;
+    font-size: 3rem;
+    font-family: 'Dancing script';
+    font-weight: bolder;
+    color: rgb(54, 54, 54);
+    margin-bottom: 2rem;
+ }
+
+ 
+
+
+/************************menu********************************************/
+
+.carga{
+    position:absolute;
+    z-index:1;
+}
+
+  
+ menu{
+    background-color: rgb(255, 224, 224);
+    color:black;
+    display:flex;
+    
+}
+
+#hamburguesa, #icon{
+    display: flex;
+    justify-content: start;
+    margin-left:10px;
+    padding:10px;
+}
+#hamburguesa:checked ~ .desplegable {
+    transform: translatex(0%);
+  }
+#icon{
+    cursor: pointer;
+}
+
+.loginGrande{
+    display: none;
+}
+#hamburguesa{
+    display:none;
+}
+
+menu ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+li{
+  margin:10px;
+     
+}    
+
+li:hover{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px grey;
+    color:black;
+    padding:10px;
+    margin:0px;
+}
+
+menu ul:first-child{
+    margin-left: 20px;
+}
+ul div{
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+.desplegable{
+    width: 40%;
+    display: flex;
+    position: absolute;
+    top: 8.4rem;
+    flex-direction: column;
+    background-color: rgb(255, 224, 224);
+    transform: translatex(-100%);
+    transition: transform 0.4s;
+    color:black;
+    
+}
+
+#fecha{
+    position: absolute;
+    left:5px;
+    top:5px;    
+    background-color: white;
+
+}
+
+/***************************main********************************************/
+section{
+    min-height: 71.3vh;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.insertaArtVisibles{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.imgCompra{
+    width: 70px;
+    height: 70px;
+    border-radius:5px;
+}
+
+.carrito td, .carrito th{
+    padding:10px
+}
+
+.tituloPrincipal{
+    text-align: center;
+    background-color: rgb(255, 224, 224);
+    color:white;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    margin-top: -20px;
+    font-size: 2rem;
+    
+}
+h1{
+    font-size: 5rem;
+}
+
+
+h1 ,h2{
+    font-family: Dancing script;
+}
+article h2{
+    font-size: 4rem;
+    text-shadow: 2px 2px 2px grey;
+}
+
+.tituloPrincipal h1{
+    text-shadow: 1px 1px 1px black;
+}
+
+.generalCalzados .fotosCalzado{
+    box-shadow: 25px 0px 25px grey;
+}
+
+article{
+    text-align: center;
+    margin-top: 50px;
+    
+}
+
+article div div{
+    margin-top: 20px;
+}
+
+article h1{
+    font-size: 5rem;
+    color:rgb(255, 153, 153);
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.precio{
+    font-size: 2rem;
+}
+
+#mapa{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    
+}
+
+#mapa p, #video p{
+    text-align: left;
+    margin: 20px;
+   
+}
+#video{
+    text-align:center;
+    
+}
+
+iframe{
+    width: 200px;
+    height: 200px;
+}
+
+.derecha{
+    margin:20px;
+}
+
+.izquierda{
+    margin: 20px;
+}
+
+form{
+    margin: 20px;
+    text-align:left;
+    
+}
+
+#datosContacto{
+    bottom:10px;
+    
+}
+
+.tituloCalzado, .precio{
+    text-align: center;
+}
+
+.fotosCalzado{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.promo{
+    width:400px;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   
+}
+
+
+
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even){background-color: #f2f2f2}
+  
+  th {
+    background-color: rgb(247, 198, 198);
+    color: black;
+  }
+
+  .textoServicios{
+    margin-top: 5rem;
+  }
+
+  #servicios h1{
+    font-size:2rem;
+    text-align: center;
+  }
+
+  #galeria .galery{
+    width:156px;
+    height:100px;
+    float:left;
+    margin-right:10px;
+  }
+
+
+  /******form Pedido********************/
+
+  .formularioPedido{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    
+  }
+
+  
+ .pedNombre, .pedApellido, .pedDireccion , .pedTelefono , .pedCuenta{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    
+  }
+  
+  input[type="submit"],button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+  }
+  
+  input[type="submit"], button {
+    background-color: #45a049;
+  }
+
+/*************************************footer*****************************/
+
+footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(255, 224, 224);
+    text-align: center;
+    display: grid;
+    
+
+}
+
+footer article{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.fa-facebook, .fa-twitter{
+    color: blue;
+    font-size: 2rem;
+}
+
+.fa-whatsapp{
+    color:green;
+    font-size: 2rem;
+}
+
+
+#servicios h3{
+    margin-bottom: 20px;
+}
+
+#servicios article{
+    margin:30px;
+}
+
+.textDetDer p{
+    
+    margin: 2rem;
+}
+
+.textDetDer .añadirAlCarrito , .textDetDer #borrar{
+    margin-left: 2rem;
+}
+
+
+
+
+@media(min-width: 768px) {
+
+    .promo{
+        width:700px;
+        height: 200px;
+     }
+.generalCalzados{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 800px;
+}
+
+.promo{
+    width: 100%;
+    height: 100%;
+   
+}
+
+
+
+
+.textDetDer{
+    margin-top: 30px;
+    padding-left: 25rem;
+    text-align: left;
+}
+
+.textDetDer p{
+    margin-bottom: 10px;
+}
+
+.imgDetalle{
+    width: 400px;
+    height: 400px;
+    float:left;
+}
+   
+
+ .fotosCalzado{
+    height: 400px;
+    width: 400px;
+    border-radius: 5px;
+}
+
+
+
+iframe{
+    width: 300px;
+    height: 200px;
+}
+
+.izquierda, .derecha{
+    margin:20px;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   
+}
+
+
+
+
+#galeria .galery{
+    width:256px;
+    height:180px;
+    float:left;
+    margin-right:10px;
+  }
+
+
+
+  #carritoCompraVacio {
+    width:400px;
+    position: absolute;
+    right:100%;
+}
+.tituloDetallado{
+    text-decoration:underline;
+    text-align: center;
+}
+
+.secPedido{
+    width: 50%;
+}
+
+
+
+}
+
+@media(min-width: 1040px) {
+
+    #icon{
+        display: none;
+    }
+
+   
+    
+    .desplegable{
+        transform: translatex(0%);
+            transition: none;
+            top: 100px;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            background-color: rgb(255, 224, 224);;
+            opacity: 1;
+            width: 100%;
+    }
+    
+    .generalCalzados{
+        max-width: 1000px;
+    }
+
+    .desplegable div{
+        display: none;
+    }
+
+    .desplegable{
+       display: flex;
+      justify-content: start;
+    }
+
+    .textDetDer .añadirAlCarrito , .textDetDer #borrar{
+        margin-left: 0rem;
+    }
+
+    .imgDetalle{
+        width: 500px;
+        height: 500px;
+        float: left;
+        margin-right: 50px;
+    }
+
+   
+  .loginGrande{
+    z-index: 1;
+    display: block;
+    margin-right: 15px;
+    padding: 10px;
+  }
+
+  .loginPequeño{
+    display: none;
+  }
+
+  #secBlog{
+    display: grid;
+    grid-template-areas: 
+    "izquierda centro derecha";
+    grid-template-columns: 1fr 1fr 1fr;
+    
+  }
+  .promo{
+    border: 5px solid gold;
+  }
+
+  .izquierda{
+    grid-area: izquierda;
+  }
+
+  .derecha{
+    grid-area: derecha;
+  }
+
+  .centro{
+    grid-area: centro;
+  }
+
+  section{
+    max-width:1200px ;
+  }
+
+  .secPedido{
+    width: 40%;
+    text-align: left;
+}
+ 
+.comprarPedido {
+  
+    width: 30%;
+  }
+
+ .promo{
+    width:1000px;
+    height: 400px;
+ }
+
+
+
+    
+}
+
+
+
